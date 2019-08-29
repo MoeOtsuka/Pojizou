@@ -1,1 +1,25 @@
 /* CSS */
+body{
+    margin: 0px;
+    /* usur-agent-style-ssが存在（リセットcss) */
+}
+.haikei{
+width: 100vw;
+height: 100vh;
+}
+.haikei-image{
+object-fit: cover;
+height: 100%;
+width: 100%;
+}
+.mannnaka-image{
+top: 50%;
+left: 50%;
+position: absolute;
+width: 40vw;
+height: 40vh;
+transform: translateX(-50%) translateY(-50%);
+
+
+}
+
