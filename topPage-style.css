@@ -23,17 +23,16 @@ height: 100%;
 width: 100%;
 }
 .mannnaka-image{
-top: 50%;
+top: 30%;
 left: 50%;
 position: absolute;
 width: 40vw;
 height: 40vh;
 transform: translateX(-50%) translateY(-50%);
+animation: horizontal 1s ease-in-out infinite alternate;
 
 }
 
-
-animation: horizontal 1s ease-in-out infinite alternate;
 
 
 }
