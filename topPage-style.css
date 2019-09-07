@@ -22,36 +22,36 @@ transform: translateX(-50%) translateY(-50%);
 }
 
 
-.lesson-wrapper {
+.menu-wrapper {
     height: 500px;
     padding-bottom: 80px;
-    background-color: #f7f7f7;
+    background-color: rgb(222, 247, 206);
     text-align: center;
   }
   
   .heading {
     padding-top: 60px;
     padding-bottom: 30px;
-    color: #5f5d60;
+    color: #ff9138;
   }
   
   .heading h2 {
     font-weight: normal;
   }
   
-  .lesson {
+  .menu {
     float: left;
     width: 25%;
   }
   
-  .lesson-icon {
+  .menu-icon {
     position: relative;
   }
   
-  .lesson-icon p {
+  .menu-icon p {
     position: absolute;
     top: 90px;
     width: 100%;
-    color: white;
+    color: rgb(0, 4, 255);
   }
   
