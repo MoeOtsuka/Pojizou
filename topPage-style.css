@@ -1,4 +1,14 @@
 /* CSS */
+/* @keyframesプロパティでcssアニメーションの宣言 */
+@keyframes horizontal {
+    0% { transform:translateX( -55%); }
+100% { transform:translateX( -45%); }
+}
+@keyframes vertical {
+  0% { transform:translateY(-55%); }
+100% { transform:translateY(-45%); }
+}
+
 body{
     margin: 0px;
     /* usur-agent-style-ssが存在（リセットcss) */
@@ -12,15 +22,34 @@ object-fit: cover;
 height: 100%;
 width: 100%;
 }
-.mannnaka-image{
+a{
 top: 50%;
 left: 50%;
 position: absolute;
 width: 40vw;
 height: 40vh;
-transform: translateX(-50%) translateY(-50%);
+/* transform: translateX(-50%) translateY(-50%); */
+animation: horizontal 1s ease-in-out infinite alternate;
 }
+.mannnaka-image{
+animation: vertical 1s ease-in-out infinite alternate;
 
+}
+/* マイクのボタン */
+.btn-top-radius {
+  top: 90%;
+  left: 50%;
+  position: absolute;
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px 10px 5px 10px;
+  text-decoration: none;
+  color: #FFA000;
+  background: #fff1da;
+  border-bottom: solid 4px #FFA000;
+  border-radius: 15px 15px 0 0;
+  transition: .4s;
+}
 
 .menu-wrapper {
     height: 500px;
@@ -55,3 +84,9 @@ transform: translateX(-50%) translateY(-50%);
     color: rgb(0, 4, 255);
   }
   
+
+.btn-top-radius:hover {
+  background: #ffc25c;
+  color: #FFF;
+}
+
