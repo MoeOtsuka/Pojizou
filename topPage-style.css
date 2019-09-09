@@ -51,7 +51,42 @@ animation: vertical 1s ease-in-out infinite alternate;
   transition: .4s;
 }
 
+.menu-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    background-color: rgb(222, 247, 206);
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #ff9138;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .menu {
+    float: left;
+    width: 25%;
+  }
+  
+  .menu-icon {
+    position: relative;
+  }
+  
+  .menu-icon p {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    color: rgb(0, 4, 255);
+  }
+  
+
 .btn-top-radius:hover {
   background: #ffc25c;
   color: #FFF;
 }
+
