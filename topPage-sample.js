@@ -62,4 +62,4 @@ if (navigator.mediaDevices === undefined) {
     })
     .catch(console.log)
   }
-  button.addEventListener('click', initAudioContext);
+  btn-top-radius.addEventListener('click', initAudioContext);
