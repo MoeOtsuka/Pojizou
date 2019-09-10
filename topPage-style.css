@@ -22,7 +22,7 @@ object-fit: cover;
 height: 100%;
 width: 100%;
 }
-a{
+.haikei a{
 top: 50%;
 left: 50%;
 position: absolute;
@@ -78,10 +78,11 @@ animation: vertical 1s ease-in-out infinite alternate;
   }
   
   .menu-icon p {
+    font-size: 37px;
     position: absolute;
     top: 90px;
     width: 100%;
-    color: rgb(0, 4, 255);
+    color: rgb(255, 0, 0);
   }
   
 
