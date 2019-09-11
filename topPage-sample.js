@@ -60,6 +60,10 @@ if (navigator.mediaDevices === undefined) {
         console.log(count++)
       }
     })
-    .catch(console.log)
+    .catch(console.log)                                 
   }
-  btn-top-radius.addEventListener('click', initAudioContext);
+  const targets = document.getElementsByClassName('btn-top-radius');
+  for(let i = 0; i < targets.length; i++){
+
+    targets[i].addEventListener('click', initAudioContext);
+  }

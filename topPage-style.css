@@ -50,6 +50,11 @@ animation: vertical 1s ease-in-out infinite alternate;
   border-radius: 15px 15px 0 0;
   transition: .4s;
 }
+.btn-top-radius:hover {
+  background: #ffc25c;
+  color: #FFF;
+}
+
 
 .menu-wrapper {
     height: 500px;
@@ -85,8 +90,4 @@ animation: vertical 1s ease-in-out infinite alternate;
   }
   
 
-.btn-top-radius:hover {
-  background: #ffc25c;
-  color: #FFF;
-}
 
