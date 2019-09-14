@@ -15,6 +15,7 @@ body{
     margin: 0px;
     /* usur-agent-style-ssが存在（リセットcss) */
     font-family: 'Comic Sans MS','Hiragino Maru Gothic ProN',cursive;
+    background-color: rgb(222, 247, 206);
 }
 .haikei{
 width: 100vw;
@@ -57,7 +58,7 @@ animation: vertical 1s ease-in-out infinite alternate;
 .menu-wrapper {
     height: 500px;
     padding-bottom: 80px;
-    background-color: rgb(222, 247, 206);
+    
     text-align: center;
   }
   
@@ -73,7 +74,7 @@ animation: vertical 1s ease-in-out infinite alternate;
   
   .menu {
     float: left;
-    width: 25%;
+    width: 50%;
   }
   
   .menu-icon {
@@ -94,3 +95,27 @@ animation: vertical 1s ease-in-out infinite alternate;
   color: #FFF;
 }
 
+.room-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  
+  text-align: center;
+}
+
+
+.room {
+  float: left;
+  width: 25%;
+}
+
+.room-icon {
+  position: relative;
+}
+
+.room-icon p {
+  font-size: 37px;
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: rgb(255, 0, 0);
+}
