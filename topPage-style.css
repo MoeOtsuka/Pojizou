@@ -1,5 +1,7 @@
 /* CSS */
 /* @keyframesプロパティでcssアニメーションの宣言 */
+
+
 @keyframes horizontal {
     0% { transform:translateX( -55%); }
 100% { transform:translateX( -45%); }
@@ -12,6 +14,8 @@
 body{
     margin: 0px;
     /* usur-agent-style-ssが存在（リセットcss) */
+    font-family: 'Comic Sans MS','Hiragino Maru Gothic ProN',cursive;
+    background-color: rgb(222, 247, 206);
 }
 .haikei{
 width: 100vw;
@@ -22,7 +26,7 @@ object-fit: cover;
 height: 100%;
 width: 100%;
 }
-a{
+.haikei a{
 top: 50%;
 left: 50%;
 position: absolute;
@@ -59,7 +63,7 @@ animation: vertical 1s ease-in-out infinite alternate;
 .menu-wrapper {
     height: 500px;
     padding-bottom: 80px;
-    background-color: rgb(222, 247, 206);
+    
     text-align: center;
   }
   
@@ -75,7 +79,7 @@ animation: vertical 1s ease-in-out infinite alternate;
   
   .menu {
     float: left;
-    width: 25%;
+    width: 50%;
   }
   
   .menu-icon {
@@ -83,11 +87,36 @@ animation: vertical 1s ease-in-out infinite alternate;
   }
   
   .menu-icon p {
+    font-size: 37px;
     position: absolute;
     top: 90px;
     width: 100%;
-    color: rgb(0, 4, 255);
+    color: rgb(255, 0, 0);
   }
   
 
 
+.room-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  
+  text-align: center;
+}
+
+
+.room {
+  float: left;
+  width: 25%;
+}
+
+.room-icon {
+  position: relative;
+}
+
+.room-icon p {
+  font-size: 37px;
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: rgb(255, 0, 0);
+}
