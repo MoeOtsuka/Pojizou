@@ -54,6 +54,11 @@ width:50vw;
   border-radius: 15px 15px 0 0;
   transition: .4s;
 }
+.btn-top-radius:hover {
+  background: #ffc25c;
+  color: #FFF;
+}
+
 
 .menu-wrapper {
     height: 500px;
@@ -90,10 +95,6 @@ width:50vw;
   }
   
 
-.btn-top-radius:hover {
-  background: #ffc25c;
-  color: #FFF;
-}
 
 .room-wrapper {
   height: 500px;
