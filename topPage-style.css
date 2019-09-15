@@ -123,6 +123,16 @@ width: 50vw;
 }
 
 .kirinImage {
- max-height: 100%;
- width: auto;
+ height: auto;
+ max-width: 40%;
+}
+
+.buntyoImage { 
+  height: auto;
+  max-width: 50%;
+}
+
+.kingyoImage {
+  height: auto;
+  max-width: 50%;
 }

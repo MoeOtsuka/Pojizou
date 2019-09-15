@@ -73,16 +73,20 @@ if (navigator.mediaDevices === undefined) {
 
   function LinkClick(param) {
     var elem = document.getElementById("center-image");
+    elem.className="mannnaka-image";
 
     switch (param) {
       case 0:
         elem.src = "images/pojizouKingyo.png";
+        elem.classList.add("kingyoImage");
         break;
       case 1:
         elem.src = "images/pojizouBuntyou.png";
+        elem.classList.add("buntyoImage");
         break;
       case 2:
         elem.src = "images/pojizouKirin.png";
+        elem.classList.add("kirinImage");
         break;
       case 3:
         elem.src = "images/pojizouZou.png";
@@ -94,6 +98,6 @@ if (navigator.mediaDevices === undefined) {
  
   }
 
-
+  
 
 
