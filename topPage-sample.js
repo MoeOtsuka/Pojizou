@@ -71,4 +71,29 @@ if (navigator.mediaDevices === undefined) {
 
 
 
-  
+  function LinkClick(param) {
+    var elem = document.getElementById("center-image");
+
+    switch (param) {
+      case 0:
+        elem.src = "images/pojizouKingyo.png";
+        break;
+      case 1:
+        elem.src = "images/pojizouBuntyou.png";
+        break;
+      case 2:
+        elem.src = "images/pojizouKirin.png";
+        break;
+      case 3:
+        elem.src = "images/pojizouZou.png";
+        break;
+      default:
+        elem.src = "images/pojizouwasi.png";
+        break;
+    }
+ 
+  }
+
+
+
+

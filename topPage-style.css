@@ -37,7 +37,7 @@ animation: horizontal 1s ease-in-out infinite alternate;
 }
 .mannnaka-image{
 animation: vertical 1s ease-in-out infinite alternate;
-width:50vw;
+width: 50vw;
 }
 /* マイクのボタン */
 .btn-top-radius {
@@ -113,10 +113,16 @@ width:50vw;
   position: relative;
 }
 
+
 .room-icon p {
   font-size: 37px;
   position: absolute;
   top: 45px;
   width: 100%;
   color: rgb(255, 0, 0);
+}
+
+.kirinImage {
+ max-height: 100%;
+ width: auto;
 }
