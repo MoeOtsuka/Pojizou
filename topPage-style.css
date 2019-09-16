@@ -82,11 +82,11 @@ width: 50vw;
     width: 50%;
   }
   
-  .menu-icon {
+  .menu-button {
     position: relative;
   }
   
-  .menu-icon p {
+  .menu-button p {
     font-size: 37px;
     position: absolute;
     top: 65px;
@@ -102,6 +102,14 @@ width: 50vw;
   
   text-align: center;
 }
+
+
+.room-heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #ff9138;
+}
+
 
 
 .room {
