@@ -77,8 +77,8 @@ if (navigator.mediaDevices === undefined) {
 
     switch (param) {
       case 0:
-        elem.src = "images/pojizouKingyo.png";
-        elem.classList.add("kingyoImage");
+        elem.src = "images/pojizouCat.png";
+        elem.classList.add("catImage");
         break;
       case 1:
         elem.src = "images/pojizouBuntyou.png";
