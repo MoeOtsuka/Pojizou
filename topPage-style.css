@@ -87,6 +87,7 @@ width: 50vw;
   }
   
   .menu-button p {
+    font-family: 'Comic Sans MS','Hiragino Maru Gothic ProN',cursive;
     font-size: 37px;
     position: absolute;
     top: 65px;
@@ -130,6 +131,16 @@ width: 50vw;
   color: rgb(255, 0, 0);
 }
 
+.iconImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.iconkirinImage {
+  max-width: 50%;
+  height: auto;
+}
+
 .kirinImage {
  height: auto;
  max-width: 40%;
@@ -140,7 +151,7 @@ width: 50vw;
   max-width: 50%;
 }
 
-.kingyoImage {
+.catImage {
   height: auto;
   max-width: 50%;
 }
