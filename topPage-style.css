@@ -20,6 +20,7 @@ body{
 .haikei{
 width: 100vw;
 height: 100vh;
+position: relative;
 }
 .haikei-image{
 object-fit: cover;
@@ -34,6 +35,8 @@ width: 40vw;
 height: 40vh;
 /* transform: translateX(-50%) translateY(-50%); */
 animation: horizontal 1s ease-in-out infinite alternate;
+z-index: 1000;
+
 }
 .mannnaka-image{
 animation: vertical 1s ease-in-out infinite alternate;
@@ -131,6 +134,8 @@ width: 50vw;
   color: rgb(255, 0, 0);
 }
 
+
+
 .iconImage {
   max-width: 100%;
   height: auto;
@@ -155,3 +160,4 @@ width: 50vw;
   height: auto;
   max-width: 80%;
 }
+
