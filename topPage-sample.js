@@ -100,14 +100,14 @@ if (navigator.mediaDevices === undefined) {
 
 //save機能
 
-const saveButton = document.getElementById("save-button")
+// const saveButton = document.getElementById("save-button")
 
 
-saveButton.addEventListener('click', function(){
+// saveButton.addEventListener('click', function(){
 
  
   
-  window.localStorage.setItem([],[count]);
+//   window.localStorage.setItem([],[count]);
 
 
 
@@ -117,4 +117,4 @@ saveButton.addEventListener('click', function(){
 
 
 
-})
+// })
