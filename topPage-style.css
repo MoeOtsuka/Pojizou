@@ -1,22 +1,27 @@
 /* CSS */
 /* @keyframesプロパティでcssアニメーションの宣言 */
 
-
-@keyframes horizontal {
-    0% { transform:translateX( -55%); }
-100% { transform:translateX( -45%); }
+@-webkit-keyframes eight {
+  0%,25% { -webkit-transform: rotate(40deg); }
+100%,75% { -webkit-transform: rotate(-40deg); }
 }
-@keyframes vertical {
-  0% { transform:translateY(-55%); }
-100% { transform:translateY(-45%); }
+@keyframes eight {
+0%,25% { transform: rotate(40deg); }
+100%,75% { transform: rotate(-40deg); }
 }
-
-
+@-webkit-keyframes updown {
+	25% { -webkit-transform: translate3d(50%,20px,0); }
+	75% { -webkit-transform: translate3d(-50%,-20px,0); }
+}
+@keyframes updown {
+  25% { transform: translate3d(50%,20px,0); }
+	75% { transform: translate3d(-50%,-20px,0); }
+}
 body{
-    margin: 0px;
-    /* usur-agent-style-ssが存在（リセットcss) */
-    font-family: 'Comic Sans MS','Hiragino Maru Gothic ProN',cursive;
-    background-color: rgb(222, 247, 206);
+margin: 0px;
+/* usur-agent-style-ssが存在（リセットcss) */
+font-family: 'Comic Sans MS','Hiragino Maru Gothic ProN',cursive;
+background-color: rgb(222, 247, 206);
 }
 .haikei{
 width: 100vw;
@@ -28,19 +33,22 @@ object-fit: cover;
 height: 100%;
 width: 100%;
 }
-.haikei a{
-top: 50%;
-left: 50%;
+.mannaka{
+top: 10%;
+left: 30%;
 position: absolute;
 width: 40vw;
 height: 40vh;
-/* transform: translateX(-50%) translateY(-50%); */
-animation: horizontal 1s ease-in-out infinite alternate;
+-webkit-transition: background-color 1s;
+transition: background-color 1s;
+-webkit-animation: eight 1s -1s infinite ease alternate;
+animation: eight 1s -1s infinite ease alternate;
 z-index: 1000;
-
 }
 .mannnaka-image{
-animation: vertical 1s ease-in-out infinite alternate;
+transform-origin: center bottom;
+-webkit-animation: updown 2s infinite linear;
+animation: updown 2s infinite linear;
 width: 50vw;
 }
 /* マイクのボタン */
