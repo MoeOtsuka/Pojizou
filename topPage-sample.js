@@ -128,6 +128,7 @@ if (navigator.mediaDevices === undefined) {
         break;
     }
  
+    
   }
 
 //save機能
