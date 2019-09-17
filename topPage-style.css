@@ -40,8 +40,7 @@ z-index: 1000;
 }
 .mannnaka-image{
 animation: vertical 1s ease-in-out infinite alternate;
-
-
+width: 50vw;
 }
 /* マイクのボタン */
 .btn-top-radius {
@@ -86,14 +85,15 @@ animation: vertical 1s ease-in-out infinite alternate;
     width: 50%;
   }
   
-  .menu-icon {
+  .menu-button {
     position: relative;
   }
   
-  .menu-icon p {
+  .menu-button p {
+    font-family: 'Comic Sans MS','Hiragino Maru Gothic ProN',cursive;
     font-size: 37px;
     position: absolute;
-    top: 90px;
+    top: 65px;
     width: 100%;
     color: rgb(255, 0, 0);
   }
@@ -108,6 +108,14 @@ animation: vertical 1s ease-in-out infinite alternate;
 }
 
 
+.room-heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #ff9138;
+}
+
+
+
 .room {
   float: left;
   width: 25%;
@@ -117,11 +125,39 @@ animation: vertical 1s ease-in-out infinite alternate;
   position: relative;
 }
 
+
 .room-icon p {
   font-size: 37px;
   position: absolute;
-  top: 90px;
+  top: 45px;
   width: 100%;
   color: rgb(255, 0, 0);
+}
+
+
+
+.iconImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.iconkirinImage {
+  max-width: 50%;
+  height: auto;
+}
+
+.kirinImage {
+ height: auto;
+ max-width: 40%;
+}
+
+.buntyoImage { 
+  height: auto;
+  max-width: 50%;
+}
+
+.catImage {
+  height: auto;
+  max-width: 80%;
 }
 
