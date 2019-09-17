@@ -89,6 +89,7 @@ if (navigator.mediaDevices === undefined) {
       let morumottoheight = Math.floor( Math.random() *"gradeupheight") ;
       let morumottowidth = Math.floor( Math.random() * "grandwidth" ) ;
       
+
       gradeup.style.top = "morumottoheight" 
       gradeup.style.left = "morumottowidth"
       gradeup.style.zIndex = "100"
@@ -108,6 +109,7 @@ if (navigator.mediaDevices === undefined) {
   function LinkClick(param) {
     var elem = document.getElementById("center-image");
     elem.className="mannnaka-image";
+    point = 0;
 
     switch (param) {
       case 0:
@@ -136,21 +138,20 @@ if (navigator.mediaDevices === undefined) {
 //save機能
 
 // const saveButton = document.getElementById("save-button")
-
-
 // saveButton.addEventListener('click', function(){
-
- 
-  
 //   window.localStorage.setItem([],[count]);
-
-
-
-
-
-
-
-
-
 // })
+
+//reset機能
+
+const resetButton = document.getElementById("reset-button")
+
+resetButton.addEventListener('click', function(){
+
+point=0;
+
+
+})
+
+
 
