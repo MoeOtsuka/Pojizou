@@ -75,35 +75,109 @@ if (navigator.mediaDevices === undefined) {
 
   let countup = function(){
     console.log(point++);
-    if(point %10 === 0){
+    if(point === 10){
       console.log("大変だったね");
       const gradeup = document.createElement('img');
       gradeup.src = "./images/モルモット.png"
       
       gradeup.style.position = "absolute"
       
-      let gradeupheight = haikei.clientHeight; 
-      let grandwidth = haikei.clientWidth;
-      //数字+文字列↓
       
-      let morumottoheight = Math.floor( Math.random() *"gradeupheight") ;
-      let morumottowidth = Math.floor( Math.random() * "grandwidth" ) ;
-      
-      gradeup.style.top = "morumottoheight" 
-      gradeup.style.left = "morumottowidth"
+      gradeup.style.top = "20vw" 
+      gradeup.style.left = "20vw"
       gradeup.style.zIndex = "100"
       
       haikei.appendChild(gradeup);
     }
+
+
+    if(point === 20){
+      console.log("大変だったね");
+      const gradeup = document.createElement('img');
+      gradeup.src = "./images/モルモット.png"
+      
+      gradeup.style.position = "absolute"
+      
+      
+      gradeup.style.top = "2vw" 
+      gradeup.style.left = "2vw"
+      gradeup.style.zIndex = "100"
+      
+      haikei.appendChild(gradeup);
+    }
+
+    if(point === 30){
+      console.log("大変だったね");
+      const gradeup = document.createElement('img');
+      gradeup.src = "./images/モルモット.png"
+      
+      gradeup.style.position = "absolute"
+      
+      
+      gradeup.style.top = "40vw" 
+      gradeup.style.left = "50vw"
+      gradeup.style.zIndex = "100"
+      
+      haikei.appendChild(gradeup);
+    }
+
+    if(point === 40){
+      console.log("大変だったね");
+      const gradeup = document.createElement('img');
+      gradeup.src = "./images/モルモット.png"
+      
+      gradeup.style.position = "absolute"
+      
+      
+      gradeup.style.top = "60vw" 
+      gradeup.style.left = "70vw"
+      gradeup.style.zIndex = "100"
+      
+      haikei.appendChild(gradeup);
+    }
+
+
+    if(point === 50){
+      console.log("大変だったね");
+      const gradeup = document.createElement('img');
+      gradeup.src = "./images/モルモット.png"
+      
+      gradeup.style.position = "absolute"
+      
+      
+      gradeup.style.top = "20vw" 
+      gradeup.style.left = "70vw"
+      gradeup.style.zIndex = "100"
+      
+      haikei.appendChild(gradeup);
+    }
+
+    if(point === 60){
+      console.log("大変だったね");
+      const gradeup = document.createElement('img');
+      gradeup.src = "./images/モルモット.png"
+      
+      gradeup.style.position = "absolute"
+      
+      
+      gradeup.style.top = "60vw" 
+      gradeup.style.left = "10vw"
+      gradeup.style.zIndex = "100"
+      
+      haikei.appendChild(gradeup);
+    }
+
+    
+
+
+
   }
-  setInterval(countup, 1000);
+  setInterval(countup, 2000);
 
 
 
 
-  btn-top-radius.addEventListener('click', initAudioContext);
-
-
+  
 
   function LinkClick(param) {
     var elem = document.getElementById("center-image");
