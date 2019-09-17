@@ -67,3 +67,33 @@ if (navigator.mediaDevices === undefined) {
 
     targets[i].addEventListener('click', initAudioContext);
   }
+
+  let haikei = document.getElementById("haikei"); 
+
+  let point = 0;
+
+  let countup = function(){
+    console.log(point++);
+    if(point %10 === 0){
+      console.log("大変だったね");
+      const gradeup = document.createElement('img');
+      gradeup.src = "./images/モルモット.png"
+      
+      gradeup.style.position = "absolute"
+      
+      let gradeupheight = haikei.clientHeight; 
+      let grandwidth = haikei.clientWidth;
+      //数字+文字列↓
+      
+      
+      gradeup.style.top = "200px" 
+      gradeup.style.left = "200px"
+      gradeup.style.zIndex = "100"
+      
+      haikei.appendChild(gradeup);
+    }
+  }
+  setInterval(countup, 1000);
+
+
+
