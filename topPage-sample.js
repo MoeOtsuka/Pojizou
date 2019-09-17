@@ -86,9 +86,11 @@ if (navigator.mediaDevices === undefined) {
       let grandwidth = haikei.clientWidth;
       //数字+文字列↓
       
+      let morumottoheight = Math.floor( Math.random() *"gradeupheight") ;
+      let morumottowidth = Math.floor( Math.random() * "grandwidth" ) ;
       
-      gradeup.style.top = "200px" 
-      gradeup.style.left = "200px"
+      gradeup.style.top = "morumottoheight" 
+      gradeup.style.left = "morumottowidth"
       gradeup.style.zIndex = "100"
       
       haikei.appendChild(gradeup);
