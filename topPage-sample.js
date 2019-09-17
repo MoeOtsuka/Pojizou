@@ -67,6 +67,7 @@ if (navigator.mediaDevices === undefined) {
 
     targets[i].addEventListener('click', initAudioContext);
   }
+ 
 
   let haikei = document.getElementById("haikei"); 
 
@@ -96,4 +97,57 @@ if (navigator.mediaDevices === undefined) {
   setInterval(countup, 1000);
 
 
+
+
+  btn-top-radius.addEventListener('click', initAudioContext);
+
+
+
+  function LinkClick(param) {
+    var elem = document.getElementById("center-image");
+    elem.className="mannnaka-image";
+
+    switch (param) {
+      case 0:
+        elem.src = "images/pojizouCat.png";
+        elem.classList.add("catImage");
+        break;
+      case 1:
+        elem.src = "images/pojizouBuntyou.png";
+        elem.classList.add("buntyoImage");
+        break;
+      case 2:
+        elem.src = "images/pojizouKirin.png";
+        elem.classList.add("kirinImage");
+        break;
+      case 3:
+        elem.src = "images/pojizouZou.png";
+        break;
+      default:
+        elem.src = "images/pojizouwasi.png";
+        break;
+    }
+ 
+  }
+
+//save機能
+
+// const saveButton = document.getElementById("save-button")
+
+
+// saveButton.addEventListener('click', function(){
+
+ 
+  
+//   window.localStorage.setItem([],[count]);
+
+
+
+
+
+
+
+
+
+// })
 

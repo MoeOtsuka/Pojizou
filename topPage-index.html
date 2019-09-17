@@ -8,14 +8,33 @@
     <link rel="stylesheet" href="topPage-style.css">
 </head>
 <body>
+ page-grade-up
     <div class="haikei" id="haikei">
+
+    
+    <div class="haikei">
         <img src="./images/pojizou2.jpg" class="haikei-image">
-        <a><img src="./images/pojizou5.jpg" class="mannnaka-image"></a>
+        <a><img id="center-image" src="./images/pojizouwasi.png" class="mannnaka-image"></a>
     </div>
     <div class = "btn-top-radius">マイクボタン</div>
 
 
     <!-- <div><img id="star" src = "./geeksalon/star.png";></div>  -->
+
+
+
+<!-- <div class="audio_wrap">
+    <div class="audio_button">BGM</div>
+    <audio　autoplay controls id="audio" src="./music/healing1.mp3" loop>
+      あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
+    </audio>
+</div> -->
+
+<!-- <audio autoplay loop>
+    <source src="ファイル名.mp3">
+    あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
+  </audio> -->
+
 
 
 
@@ -27,73 +46,71 @@
       <div class="menus">
         <div class="menu">
           <div class="menu-icon">
-              <a href=""><img src="./images/hozon-icon.jpg">
-                <p>Save</p>
-              </a>
+            <button id="save-button" class="menu-button">
+              
+              <img src="./images/hozon-icon.jpg">
+              <p>Save</p>
             
+            </button>
+              
           </div>
         </div>
-        <!-- <div class="menu">
-            <div class="menu-icon">
-              <a href=""><img src="./images/room.jpg">
-                <p>Move Room</p>
-              </a>
-              
-            </div>
-        </div> -->
+        
         <div class="menu">
-            <div class="menu-icon">
-              <a href=""><img src="./images/resset.jpg">
-                <p>Resset</p>
-              </a>
+            <div class="menu-icon menu-button">
+
+              <button id="reset-button" class="menu-button">
               
+                <img src="./images/reset.jpg">
+                <p>Reset</p>
+              
+              </button>
+ 
             </div>
         </div>
-        <!-- <div class="menu">
-            <div class="menu-icon">
-              <a href=""><img src="">
-                <p>？</p>
-              </a>
-              
-            </div>
-        </div> -->
+        
     </div>
 </div>
 
 <div class="room-wrapper">
     <div class="room-container">
-      <div class="heading">
+      <div class="room-heading">
         <h2>Move Room</h2>
       </div>
       <div class="rooms">
         <div class="room">
           <div class="room-icon">
-              <a href=""><img src="">
-                <p>cat</p>
-              </a>
+
+              <a href="javascript:void(0);" onclick="LinkClick(0);">
+                <img class="iconImage" src="./images/icon-cat.png">
+                <p>Cat</p>
+              </a>               
           </div>
         </div>
 
         <div class="room">
             <div class="room-icon">
-                <a href=""><img src="">
-                  <p>dog</p>
+                <a href="javascript:void(0);" onclick="LinkClick(1);">
+                  <img class="iconImage" src="./images/icon-tori.png">
+                  <p>Buntyou</p>
                 </a>
             </div>
         </div>
 
         <div class="room">
             <div class="room-icon">
-                <a href=""><img src="">
-                  <p>monkey</p>
+                <a href="javascript:void(0);" onclick="LinkClick(2);">
+                  <img class="iconkirinImage" src="./images/icon-kirin.png">
+                  <p>kirin</p>
                 </a>
             </div>
         </div>
 
         <div class="room">
             <div class="room-icon">
-                <a href=""><img src="">
-                  <p>pig</p>
+                <a href="javascript:void(0);" onclick="LinkClick(3);">
+                  <img class="iconImage" src="./images/icon-zou.png">
+                  <p>Elephant</p>
                 </a>
             </div>
         </div>
@@ -109,6 +126,7 @@
 
 
 <script src="topPage-sample.js"></script>
+
 
 </body>
 </html>
