@@ -67,37 +67,33 @@ if (navigator.mediaDevices === undefined) {
 
     targets[i].addEventListener('click', initAudioContext);
   }
-  btn-top-radius.addEventListener('click', initAudioContext);
 
+  let haikei = document.getElementById("haikei"); 
 
+  let point = 0;
 
-  function LinkClick(param) {
-    var elem = document.getElementById("center-image");
-    elem.className="mannnaka-image";
-
-    switch (param) {
-      case 0:
-        elem.src = "images/pojizouCat.png";
-        elem.classList.add("catImage");
-        break;
-      case 1:
-        elem.src = "images/pojizouBuntyou.png";
-        elem.classList.add("buntyoImage");
-        break;
-      case 2:
-        elem.src = "images/pojizouKirin.png";
-        elem.classList.add("kirinImage");
-        break;
-      case 3:
-        elem.src = "images/pojizouZou.png";
-        break;
-      default:
-        elem.src = "images/pojizouwasi.png";
-        break;
+  let countup = function(){
+    console.log(point++);
+    if(point %10 === 0){
+      console.log("大変だったね");
+      const gradeup = document.createElement('img');
+      gradeup.src = "./images/モルモット.png"
+      
+      gradeup.style.position = "absolute"
+      
+      let gradeupheight = haikei.clientHeight; 
+      let grandwidth = haikei.clientWidth;
+      //数字+文字列↓
+      
+      
+      gradeup.style.top = "200px" 
+      gradeup.style.left = "200px"
+      gradeup.style.zIndex = "100"
+      
+      haikei.appendChild(gradeup);
     }
- 
   }
+  setInterval(countup, 1000);
 
-  
 
 
