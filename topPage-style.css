@@ -1,8 +1,8 @@
 /* CSS */
 /* @keyframesプロパティでcssアニメーションの宣言 */
 @keyframes horizontal {
-  0% { transform:translateX( -55%); }
-100% { transform:translateX( -45%); }
+  0% { transform:translateX( -60%); }
+100% { transform:translateX( -40%); }
 }
 @keyframes vertical {
 0% { transform:translateY(-55%); }
@@ -33,14 +33,14 @@ width: 40vw;
 height: 40vh;
 -webkit-transition: background-color 0.5s;
 transition: background-color 0.5s;
--webkit-animation: horizontal 5s -5s infinite  alternate;
-animation: horizontal 5s -5s infinite  alternate;
+-webkit-animation: horizontal 6s -6s infinite ease alternate;
+animation: horizontal 6s -6s infinite ease alternate;
 z-index: 1000;
 }
 .mannnaka-image{
 transform-origin: center bottom;
--webkit-animation: vertical 2s infinite  alternate;
-animation: vertical 2s infinite  alternate;
+-webkit-animation: vertical 2s infinite ease alternate;
+animation: vertical 2s infinite ease alternate;
 width: 50vw;
 }
 /* マイクのボタン */
