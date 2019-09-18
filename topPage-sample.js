@@ -203,6 +203,7 @@ if (navigator.mediaDevices === undefined) {
         break;
       case 3:
         elem.src = "images/pojizouZou.png";
+        elem.classList.add("elefantImage");
         break;
       default:
         elem.src = "images/pojizouwasi.png";

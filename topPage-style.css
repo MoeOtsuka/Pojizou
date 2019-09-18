@@ -4,10 +4,10 @@
   0% { transform:translateX( -60%); }
 100% { transform:translateX( -40%); }
 }
-@keyframes vertical {
-0% { transform:translateY(-55%); }
-100% { transform:translateY(-45%); }
-}
+ @keyframes vertical {
+0% { transform:translateY(-57%); }
+100% { transform:translateY(-47%); }  
+ }
 
 body{
 margin: 0px;
@@ -26,7 +26,7 @@ height: 100%;
 width: 100%;
 }
 .mannaka{
-top: 50%;
+top: 32%;
 left: 50%;
 position: absolute;
 width: 40vw;
@@ -39,14 +39,14 @@ z-index: 1000;
 }
 .mannnaka-image{
 transform-origin: center bottom;
--webkit-animation: vertical 2s infinite ease alternate;
-animation: vertical 2s infinite ease alternate;
+-webkit-animation: vertical 4s infinite ease alternate;
+animation: vertical 4s infinite ease alternate;
 width: 50vw;
 }
 /* マイクのボタン */
 .btn-top-radius {
   top: 90%;
-  left: 50%;
+  left: 20%;
   position: absolute;
   display: inline-block;
   font-weight: bold;
@@ -150,6 +150,8 @@ width: 50vw;
 .kirinImage {
  height: auto;
  max-width: 40%;
+ -webkit-animation: vertical 0s infinite ease alternate;
+ animation: vertical 0s infinite ease alternate;
 }
 
 .buntyoImage { 
@@ -158,8 +160,17 @@ width: 50vw;
 }
 
 .catImage {
+
   height: auto;
   max-width: 80%;
+  -webkit-animation: vertical 0s infinite ease alternate;
+  animation: vertical 0s infinite ease alternate;
+}
+.elefantImage{
+  height: auto;
+  max-width: 200%;
+  -webkit-animation: vertical 0s infinite ease alternate;
+  animation: vertical 0s infinite ease alternate;
 }
 
 
