@@ -1,22 +1,14 @@
 /* CSS */
 /* @keyframesプロパティでcssアニメーションの宣言 */
+@keyframes horizontal {
+  0% { transform:translateX( -55%); }
+100% { transform:translateX( -45%); }
+}
+@keyframes vertical {
+0% { transform:translateY(-55%); }
+100% { transform:translateY(-45%); }
+}
 
-@-webkit-keyframes eight {
-  0%,25% { -webkit-transform: rotate(40deg); }
-100%,75% { -webkit-transform: rotate(-40deg); }
-}
-@keyframes eight {
-0%,25% { transform: rotate(40deg); }
-100%,75% { transform: rotate(-40deg); }
-}
-@-webkit-keyframes updown {
-	25% { -webkit-transform: translate3d(50%,20px,0); }
-	75% { -webkit-transform: translate3d(-50%,-20px,0); }
-}
-@keyframes updown {
-  25% { transform: translate3d(50%,20px,0); }
-	75% { transform: translate3d(-50%,-20px,0); }
-}
 body{
 margin: 0px;
 /* usur-agent-style-ssが存在（リセットcss) */
@@ -34,21 +26,21 @@ height: 100%;
 width: 100%;
 }
 .mannaka{
-top: 10%;
-left: 30%;
+top: 50%;
+left: 50%;
 position: absolute;
 width: 40vw;
 height: 40vh;
--webkit-transition: background-color 1s;
-transition: background-color 1s;
--webkit-animation: eight 1s -1s infinite ease alternate;
-animation: eight 1s -1s infinite ease alternate;
+-webkit-transition: background-color 0.5s;
+transition: background-color 0.5s;
+-webkit-animation: horizontal 5s -5s infinite  alternate;
+animation: horizontal 5s -5s infinite  alternate;
 z-index: 1000;
 }
 .mannnaka-image{
 transform-origin: center bottom;
--webkit-animation: updown 2s infinite linear;
-animation: updown 2s infinite linear;
+-webkit-animation: vertical 2s infinite  alternate;
+animation: vertical 2s infinite  alternate;
 width: 50vw;
 }
 /* マイクのボタン */
@@ -169,4 +161,5 @@ width: 50vw;
   height: auto;
   max-width: 80%;
 }
+
 
